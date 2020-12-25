@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name mp)(type KiCad)(uri /home/bojan/git/open_camera/kicad/lib/power)(options "")(descr ""))
+)

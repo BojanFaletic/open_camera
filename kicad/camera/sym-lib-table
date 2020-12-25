@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name MP2359)(type Legacy)(uri /home/bojan/git/open_camera/kicad/lib/power/MP2359.lib)(options "")(descr ""))
+  (lib (name DDR3)(type Legacy)(uri /home/bojan/git/open_camera/kicad/lib/DDR3/MT41K128M16JT-125_IT_K.lib)(options "")(descr ""))
+  (lib (name M25P80)(type Legacy)(uri /home/bojan/git/open_camera/kicad/lib/flash/M25P80.lib)(options "")(descr ""))
+)
