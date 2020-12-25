@@ -1,6 +1,6 @@
 (sym_lib_table
-  (lib (name MP2359)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power/MP2359.lib)(options "")(descr ""))
-  (lib (name DDR3)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/DDR3/MT41K128M16JT-125_IT_K.lib)(options "")(descr ""))
-  (lib (name M25P80)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/flash/M25P80.lib)(options "")(descr ""))
+  (lib (name MP2359)(type Legacy)(uri ${OPEN_CAM}/power/MP2359.lib)(options "")(descr ""))
+  (lib (name DDR3)(type Legacy)(uri ${OPEN_CAM}/DDR3/MT41K128M16JT-125_IT_K.lib)(options "")(descr ""))
+  (lib (name M25P80)(type Legacy)(uri ${OPEN_CAM}/flash/M25P80.lib)(options "")(descr ""))
   (lib (name camera-rescue)(type Legacy)(uri ${KIPRJMOD}/camera-rescue.lib)(options "")(descr ""))
 )

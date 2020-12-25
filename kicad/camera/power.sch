@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L FPGA_Xilinx_Spartan6:XC6SLX16-FTG256 U1
+L camera-rescue:XC6SLX16-FTG256-FPGA_Xilinx_Spartan6 U1
 U 4 1 5FE59FBF
 P 9300 3850
 F 0 "U1" H 9300 5217 50  0000 C CNN
@@ -26,7 +26,7 @@ F 4 "2.85" H 9300 3850 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L camera-rescue:R-Device R2
 U 1 1 5FE705DB
 P 2400 2650
 F 0 "R2" H 2330 2604 50  0000 R CNN
@@ -38,7 +38,7 @@ F 4 "0.00217" H 2400 2650 50  0001 C CNN "Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R3
+L camera-rescue:R-Device R3
 U 1 1 5FE78589
 P 2400 3300
 F 0 "R3" H 2470 3346 50  0000 L CNN
@@ -50,7 +50,7 @@ F 4 "0.00217" H 2400 3300 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L camera-rescue:C-Device C8
 U 1 1 5FE7B760
 P 3800 3150
 F 0 "C8" H 3915 3196 50  0000 L CNN
@@ -62,7 +62,7 @@ F 4 "0.0062" V 3800 3150 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L3
+L camera-rescue:L-Device L3
 U 1 1 5FE7D0A4
 P 3450 3000
 F 0 "L3" V 3640 3000 50  0000 C CNN
@@ -73,7 +73,7 @@ F 3 "~" H 3450 3000 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Diode:1N5712 D1
+L camera-rescue:1N5712-Diode D1
 U 1 1 5FE7F760
 P 3150 3150
 F 0 "D1" V 3104 3230 50  0000 L CNN
@@ -88,7 +88,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 3000 3800 3000
 $Comp
-L power:GND #PWR0101
+L camera-rescue:GND-power #PWR0101
 U 1 1 5FE817C6
 P 3150 3500
 F 0 "#PWR0101" H 3150 3250 50  0001 C CNN
@@ -99,7 +99,7 @@ F 3 "" H 3150 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L camera-rescue:GND-power #PWR0102
 U 1 1 5FE81F43
 P 3800 3500
 F 0 "#PWR0102" H 3800 3250 50  0001 C CNN
@@ -114,7 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 3500 3150 3300
 $Comp
-L power:+3V3 #PWR0103
+L camera-rescue:+3V3-power #PWR0103
 U 1 1 5FE9A2A8
 P 3800 2400
 F 0 "#PWR0103" H 3800 2250 50  0001 C CNN
@@ -125,7 +125,7 @@ F 3 "" H 3800 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MP2359:MP2359 U4
+L camera-rescue:MP2359-MP2359 U4
 U 1 1 5FE9E911
 P 1650 3000
 F 0 "U4" H 1650 3375 50  0000 C CNN
@@ -137,7 +137,7 @@ F 4 "0.072" H 1650 3000 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L camera-rescue:GND-power #PWR0104
 U 1 1 5FEAC41D
 P 1650 3450
 F 0 "#PWR0104" H 1650 3200 50  0001 C CNN
@@ -150,7 +150,7 @@ $EndComp
 Wire Wire Line
 	1650 3450 1650 3300
 $Comp
-L Device:R R1
+L camera-rescue:R-Device R1
 U 1 1 5FEACC02
 P 1000 3000
 F 0 "R1" H 930 2954 50  0000 R CNN
@@ -164,7 +164,7 @@ $EndComp
 Wire Wire Line
 	1200 3150 1000 3150
 $Comp
-L power:+5V #PWR0105
+L camera-rescue:+5V-power #PWR0105
 U 1 1 5FEADE69
 P 1000 2700
 F 0 "#PWR0105" H 1000 2550 50  0001 C CNN
@@ -178,7 +178,7 @@ Wire Wire Line
 	1000 2700 1000 2850
 Connection ~ 1000 2850
 $Comp
-L Device:C C5
+L camera-rescue:C-Device C5
 U 1 1 5FEAF6F8
 P 2750 2850
 F 0 "C5" V 2498 2850 50  0000 C CNN
@@ -209,7 +209,7 @@ Wire Wire Line
 	2100 3150 2400 3150
 Connection ~ 2400 3150
 $Comp
-L power:GND #PWR0106
+L camera-rescue:GND-power #PWR0106
 U 1 1 5FEFD480
 P 2400 3500
 F 0 "#PWR0106" H 2400 3250 50  0001 C CNN
@@ -227,7 +227,7 @@ Connection ~ 3800 2500
 Wire Wire Line
 	3800 2500 3800 3000
 $Comp
-L power:+3V3 #PWR0107
+L camera-rescue:+3V3-power #PWR0107
 U 1 1 5FF2D154
 P 1050 4400
 F 0 "#PWR0107" H 1050 4250 50  0001 C CNN
@@ -243,7 +243,7 @@ Connection ~ 1050 4650
 Wire Wire Line
 	1050 4650 1050 4750
 $Comp
-L Regulator_Switching:NCP1529A U2
+L camera-rescue:NCP1529A-Regulator_Switching U2
 U 1 1 5FF2B8AC
 P 1350 4750
 F 0 "U2" H 1350 5117 50  0000 C CNN
@@ -255,7 +255,7 @@ F 4 "0.089" H 1350 4750 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0108
+L camera-rescue:GND-power #PWR0108
 U 1 1 5FF2EB22
 P 1350 5350
 F 0 "#PWR0108" H 1350 5100 50  0001 C CNN
@@ -268,7 +268,7 @@ $EndComp
 Wire Wire Line
 	1350 5050 1350 5350
 $Comp
-L Device:L L1
+L camera-rescue:L-Device L1
 U 1 1 5FF2F7AC
 P 2100 4550
 F 0 "L1" V 2290 4550 50  0000 C CNN
@@ -279,7 +279,7 @@ F 3 "~" H 2100 4550 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:C C3
+L camera-rescue:C-Device C3
 U 1 1 5FF301F9
 P 2450 4700
 F 0 "C3" H 2565 4746 50  0000 L CNN
@@ -293,7 +293,7 @@ $EndComp
 Wire Wire Line
 	2250 4550 2450 4550
 $Comp
-L power:GND #PWR0109
+L camera-rescue:GND-power #PWR0109
 U 1 1 5FF31DE6
 P 2450 5350
 F 0 "#PWR0109" H 2450 5100 50  0001 C CNN
@@ -304,7 +304,7 @@ F 3 "" H 2450 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L camera-rescue:R-Device R4
 U 1 1 5FF3336E
 P 3000 4700
 F 0 "R4" H 3070 4746 50  0000 L CNN
@@ -316,7 +316,7 @@ F 4 "0.00217" H 3000 4700 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L camera-rescue:R-Device R5
 U 1 1 5FF33B47
 P 3000 5100
 F 0 "R5" H 3070 5146 50  0000 L CNN
@@ -328,7 +328,7 @@ F 4 "0.00217" H 3000 5100 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L camera-rescue:GND-power #PWR0110
 U 1 1 5FF349FB
 P 3000 5350
 F 0 "#PWR0110" H 3000 5100 50  0001 C CNN
@@ -359,7 +359,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 4850 2450 5350
 $Comp
-L power:+1V5 #PWR0111
+L camera-rescue:+1V5-power #PWR0111
 U 1 1 5FF4427E
 P 3000 4350
 F 0 "#PWR0111" H 3000 4200 50  0001 C CNN
@@ -373,7 +373,7 @@ Connection ~ 3000 4550
 Wire Wire Line
 	3000 4350 3000 4550
 $Comp
-L Device:C C6
+L camera-rescue:C-Device C6
 U 1 1 5FF7F31E
 P 3400 4700
 F 0 "C6" H 3515 4746 50  0000 L CNN
@@ -391,7 +391,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 4900 3400 4850
 $Comp
-L Device:C_Polarized_US C9
+L camera-rescue:C_Polarized_US-Device C9
 U 1 1 5FFB22CB
 P 3950 4750
 F 0 "C9" H 4065 4796 50  0000 L CNN
@@ -402,7 +402,7 @@ F 3 "~" H 3950 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0112
+L camera-rescue:GND-power #PWR0112
 U 1 1 5FFB479C
 P 3950 5350
 F 0 "#PWR0112" H 3950 5100 50  0001 C CNN
@@ -420,7 +420,7 @@ Connection ~ 3400 4550
 Wire Wire Line
 	3950 4900 3950 5350
 $Comp
-L Connector_Generic:Conn_01x02 J1
+L camera-rescue:Conn_01x02-Connector_Generic J1
 U 1 1 5FFF929A
 P 1250 1250
 F 0 "J1" H 1168 1467 50  0000 C CNN
@@ -431,7 +431,7 @@ F 3 "~" H 1250 1250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0113
+L camera-rescue:GND-power #PWR0113
 U 1 1 5FFFA2C0
 P 1450 1550
 F 0 "#PWR0113" H 1450 1300 50  0001 C CNN
@@ -442,7 +442,7 @@ F 3 "" H 1450 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L camera-rescue:C-Device C1
 U 1 1 5FFFA80C
 P 1700 1400
 F 0 "C1" H 1815 1446 50  0000 L CNN
@@ -454,7 +454,7 @@ F 4 "0.0062" V 1700 1400 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L camera-rescue:C-Device C2
 U 1 1 5FFFE56F
 P 2150 1400
 F 0 "C2" H 2035 1354 50  0000 R CNN
@@ -468,7 +468,7 @@ $EndComp
 Wire Wire Line
 	1450 1550 1450 1350
 $Comp
-L power:GND #PWR0114
+L camera-rescue:GND-power #PWR0114
 U 1 1 60002F72
 P 1700 1550
 F 0 "#PWR0114" H 1700 1300 50  0001 C CNN
@@ -479,7 +479,7 @@ F 3 "" H 1700 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0115
+L camera-rescue:GND-power #PWR0115
 U 1 1 600031D3
 P 2150 1550
 F 0 "#PWR0115" H 2150 1300 50  0001 C CNN
@@ -498,7 +498,7 @@ Wire Wire Line
 	2150 1250 2150 1150
 Connection ~ 2150 1250
 $Comp
-L power:+5V #PWR0116
+L camera-rescue:+5V-power #PWR0116
 U 1 1 600071BF
 P 2150 1150
 F 0 "#PWR0116" H 2150 1000 50  0001 C CNN
@@ -516,7 +516,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 6350 3950 6350
 $Comp
-L power:GND #PWR0117
+L camera-rescue:GND-power #PWR0117
 U 1 1 5FFBE51C
 P 3950 7150
 F 0 "#PWR0117" H 3950 6900 50  0001 C CNN
@@ -527,7 +527,7 @@ F 3 "" H 3950 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Polarized_US C10
+L camera-rescue:C_Polarized_US-Device C10
 U 1 1 5FFBE516
 P 3950 6550
 F 0 "C10" H 4065 6596 50  0000 L CNN
@@ -540,7 +540,7 @@ $EndComp
 Wire Wire Line
 	3000 6050 3000 6350
 $Comp
-L power:+1V2 #PWR0118
+L camera-rescue:+1V2-power #PWR0118
 U 1 1 5FF9207E
 P 3000 6050
 F 0 "#PWR0118" H 3000 5900 50  0001 C CNN
@@ -551,7 +551,7 @@ F 3 "" H 3000 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0119
+L camera-rescue:+3V3-power #PWR0119
 U 1 1 5FF8E488
 P 1050 6200
 F 0 "#PWR0119" H 1050 6050 50  0001 C CNN
@@ -568,7 +568,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 6350 3400 6350
 $Comp
-L Device:C C7
+L camera-rescue:C-Device C7
 U 1 1 5FF8E4DB
 P 3400 6500
 F 0 "C7" H 3515 6546 50  0000 L CNN
@@ -601,7 +601,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 7150 3000 7050
 $Comp
-L power:GND #PWR0120
+L camera-rescue:GND-power #PWR0120
 U 1 1 5FF8E4C1
 P 3000 7150
 F 0 "#PWR0120" H 3000 6900 50  0001 C CNN
@@ -612,7 +612,7 @@ F 3 "" H 3000 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L camera-rescue:R-Device R7
 U 1 1 5FF8E4BB
 P 3000 6900
 F 0 "R7" H 3070 6946 50  0000 L CNN
@@ -624,7 +624,7 @@ F 4 "0.00217" H 3000 6900 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L camera-rescue:R-Device R6
 U 1 1 5FF8E4B4
 P 3000 6500
 F 0 "R6" H 3070 6546 50  0000 L CNN
@@ -636,7 +636,7 @@ F 4 "0.00217" H 3000 6500 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0121
+L camera-rescue:GND-power #PWR0121
 U 1 1 5FF8E4AD
 P 2450 7150
 F 0 "#PWR0121" H 2450 6900 50  0001 C CNN
@@ -649,7 +649,7 @@ $EndComp
 Wire Wire Line
 	2250 6350 2450 6350
 $Comp
-L Device:C C4
+L camera-rescue:C-Device C4
 U 1 1 5FF8E4A6
 P 2450 6500
 F 0 "C4" H 2565 6546 50  0000 L CNN
@@ -661,7 +661,7 @@ F 4 "0.0062" V 2450 6500 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L2
+L camera-rescue:L-Device L2
 U 1 1 5FF8E49F
 P 2100 6350
 F 0 "L2" V 2290 6350 50  0000 C CNN
@@ -674,7 +674,7 @@ $EndComp
 Wire Wire Line
 	1350 6850 1350 7150
 $Comp
-L power:GND #PWR0122
+L camera-rescue:GND-power #PWR0122
 U 1 1 5FF8E498
 P 1350 7150
 F 0 "#PWR0122" H 1350 6900 50  0001 C CNN
@@ -685,7 +685,7 @@ F 3 "" H 1350 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:NCP1529A U3
+L camera-rescue:NCP1529A-Regulator_Switching U3
 U 1 1 5FF8E492
 P 1350 6550
 F 0 "U3" H 1350 6917 50  0000 C CNN
@@ -702,7 +702,7 @@ Connection ~ 1050 6450
 Wire Wire Line
 	1050 6450 1050 6200
 $Comp
-L power:GND #PWR0123
+L camera-rescue:GND-power #PWR0123
 U 1 1 60056C2A
 P 8050 5150
 F 0 "#PWR0123" H 8050 4900 50  0001 C CNN
@@ -777,7 +777,7 @@ Connection ~ 8050 4150
 Wire Wire Line
 	8050 4150 8050 4250
 $Comp
-L power:GND #PWR0124
+L camera-rescue:GND-power #PWR0124
 U 1 1 600A0AEA
 P 10550 5150
 F 0 "#PWR0124" H 10550 4900 50  0001 C CNN
@@ -852,7 +852,7 @@ Connection ~ 10550 4150
 Wire Wire Line
 	10550 4150 10550 4250
 $Comp
-L power:+3V3 #PWR0125
+L camera-rescue:+3V3-power #PWR0125
 U 1 1 600C5626
 P 8050 2550
 F 0 "#PWR0125" H 8050 2400 50  0001 C CNN
@@ -941,7 +941,7 @@ Connection ~ 10550 3350
 Wire Wire Line
 	10550 3350 10550 3450
 $Comp
-L power:+1V2 #PWR0126
+L camera-rescue:+1V2-power #PWR0126
 U 1 1 600FF3FD
 P 10550 2550
 F 0 "#PWR0126" H 10550 2400 50  0001 C CNN
@@ -952,7 +952,7 @@ F 3 "" H 10550 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0127
+L camera-rescue:+3V3-power #PWR0127
 U 1 1 60131868
 P 5250 2500
 F 0 "#PWR0127" H 5250 2350 50  0001 C CNN
@@ -963,7 +963,7 @@ F 3 "" H 5250 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0128
+L camera-rescue:GND-power #PWR0128
 U 1 1 601321DB
 P 5250 3100
 F 0 "#PWR0128" H 5250 2850 50  0001 C CNN
@@ -974,7 +974,7 @@ F 3 "" H 5250 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C11
+L camera-rescue:C-Device C11
 U 1 1 60132B76
 P 5250 2750
 F 0 "C11" H 5365 2796 50  0000 L CNN
@@ -986,7 +986,7 @@ F 4 "0.0062" V 5250 2750 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C14
+L camera-rescue:C-Device C14
 U 1 1 6013359F
 P 5650 2750
 F 0 "C14" H 5535 2704 50  0000 R CNN
@@ -1000,7 +1000,7 @@ $EndComp
 Wire Wire Line
 	5250 2900 5650 2900
 $Comp
-L Device:C C17
+L camera-rescue:C-Device C17
 U 1 1 6013FE81
 P 5950 2750
 F 0 "C17" H 5835 2704 50  0000 R CNN
@@ -1012,7 +1012,7 @@ F 4 "0.0062" V 5950 2750 50  0001 C CNN "Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C20
+L camera-rescue:C-Device C20
 U 1 1 60140294
 P 6250 2750
 F 0 "C20" H 6135 2704 50  0000 R CNN
@@ -1024,7 +1024,7 @@ F 4 "0.0062" V 6250 2750 50  0001 C CNN "Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C23
+L camera-rescue:C-Device C23
 U 1 1 60140657
 P 6600 2750
 F 0 "C23" H 6485 2704 50  0000 R CNN
@@ -1062,7 +1062,7 @@ Connection ~ 5250 2600
 Wire Wire Line
 	5250 2600 5650 2600
 $Comp
-L power:GND #PWR0129
+L camera-rescue:GND-power #PWR0129
 U 1 1 601847B2
 P 5250 4350
 F 0 "#PWR0129" H 5250 4100 50  0001 C CNN
@@ -1073,7 +1073,7 @@ F 3 "" H 5250 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C12
+L camera-rescue:C-Device C12
 U 1 1 601847B9
 P 5250 4000
 F 0 "C12" H 5365 4046 50  0000 L CNN
@@ -1085,7 +1085,7 @@ F 4 "0.0062" V 5250 4000 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C15
+L camera-rescue:C-Device C15
 U 1 1 601847C0
 P 5650 4000
 F 0 "C15" H 5535 3954 50  0000 R CNN
@@ -1099,7 +1099,7 @@ $EndComp
 Wire Wire Line
 	5250 4150 5650 4150
 $Comp
-L Device:C C18
+L camera-rescue:C-Device C18
 U 1 1 601847C8
 P 5950 4000
 F 0 "C18" H 5835 3954 50  0000 R CNN
@@ -1111,7 +1111,7 @@ F 4 "0.0062" V 5950 4000 50  0001 C CNN "Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C21
+L camera-rescue:C-Device C21
 U 1 1 601847CF
 P 6250 4000
 F 0 "C21" H 6135 3954 50  0000 R CNN
@@ -1123,7 +1123,7 @@ F 4 "0.0062" V 6250 4000 50  0001 C CNN "Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C24
+L camera-rescue:C-Device C24
 U 1 1 601847D6
 P 6600 4000
 F 0 "C24" H 6485 3954 50  0000 R CNN
@@ -1161,7 +1161,7 @@ Connection ~ 5250 3850
 Wire Wire Line
 	5250 3850 5650 3850
 $Comp
-L power:GND #PWR0130
+L camera-rescue:GND-power #PWR0130
 U 1 1 6018D4C0
 P 5250 5500
 F 0 "#PWR0130" H 5250 5250 50  0001 C CNN
@@ -1172,7 +1172,7 @@ F 3 "" H 5250 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C13
+L camera-rescue:C-Device C13
 U 1 1 6018D4C7
 P 5250 5150
 F 0 "C13" H 5365 5196 50  0000 L CNN
@@ -1184,7 +1184,7 @@ F 4 "0.0062" V 5250 5150 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C16
+L camera-rescue:C-Device C16
 U 1 1 6018D4CE
 P 5650 5150
 F 0 "C16" H 5535 5104 50  0000 R CNN
@@ -1198,7 +1198,7 @@ $EndComp
 Wire Wire Line
 	5250 5300 5650 5300
 $Comp
-L Device:C C19
+L camera-rescue:C-Device C19
 U 1 1 6018D4D6
 P 5950 5150
 F 0 "C19" H 5835 5104 50  0000 R CNN
@@ -1210,7 +1210,7 @@ F 4 "0.0062" V 5950 5150 50  0001 C CNN "Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C22
+L camera-rescue:C-Device C22
 U 1 1 6018D4DD
 P 6250 5150
 F 0 "C22" H 6135 5104 50  0000 R CNN
@@ -1222,7 +1222,7 @@ F 4 "0.0062" V 6250 5150 50  0001 C CNN "Cost"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C25
+L camera-rescue:C-Device C25
 U 1 1 6018D4E4
 P 6600 5150
 F 0 "C25" H 6485 5104 50  0000 R CNN
@@ -1260,7 +1260,7 @@ Connection ~ 5250 5000
 Wire Wire Line
 	5250 5000 5650 5000
 $Comp
-L power:+1V5 #PWR0131
+L camera-rescue:+1V5-power #PWR0131
 U 1 1 60197281
 P 5250 3750
 F 0 "#PWR0131" H 5250 3600 50  0001 C CNN
@@ -1271,7 +1271,7 @@ F 3 "" H 5250 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+1V2 #PWR0132
+L camera-rescue:+1V2-power #PWR0132
 U 1 1 601992F9
 P 5250 4900
 F 0 "#PWR0132" H 5250 4750 50  0001 C CNN

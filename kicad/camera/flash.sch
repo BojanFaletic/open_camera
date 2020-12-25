@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L FPGA_Xilinx_Spartan6:XC6SLX16-FTG256 U1
+L camera-rescue:XC6SLX16-FTG256-FPGA_Xilinx_Spartan6 U1
 U 3 1 60366767
 P 7950 1300
 F 0 "U1" H 8082 2067 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 7950 1300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J2
+L camera-rescue:Conn_01x06-Connector_Generic J2
 U 1 1 6036C970
 P 5900 1250
 F 0 "J2" H 5818 1667 50  0000 C CNN
@@ -54,7 +54,7 @@ TCK
 Wire Wire Line
 	6100 1150 6350 1150
 $Comp
-L power:GND #PWR0144
+L camera-rescue:GND-power #PWR0144
 U 1 1 6037782C
 P 6350 1150
 F 0 "#PWR0144" H 6350 900 50  0001 C CNN
@@ -69,7 +69,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 1050 6250 1050
 $Comp
-L power:+3V3 #PWR0145
+L camera-rescue:+3V3-power #PWR0145
 U 1 1 60376657
 P 6250 850
 F 0 "#PWR0145" H 6250 700 50  0001 C CNN
@@ -96,7 +96,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 800  9450 800 
 $Comp
-L power:GND #PWR0146
+L camera-rescue:GND-power #PWR0146
 U 1 1 6039DD6C
 P 9600 1600
 F 0 "#PWR0146" H 9600 1350 50  0001 C CNN
@@ -118,7 +118,7 @@ Text Label 9700 1400 0    50   ~ 0
 PROG_B
 NoConn ~ 9450 1800
 $Comp
-L Device:R R?
+L camera-rescue:R-Device R?
 U 1 1 603D29EC
 P 10800 1800
 AR Path="/5FE53EBB/603D29EC" Ref="R?"  Part="1" 
@@ -132,7 +132,7 @@ F 4 "0.00217" H 10800 1800 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D2
+L camera-rescue:LED-Device D2
 U 1 1 603D3617
 P 10800 1400
 F 0 "D2" V 10839 1282 50  0000 R CNN
@@ -143,7 +143,7 @@ F 3 "~" H 10800 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L camera-rescue:R-Device R?
 U 1 1 603D897A
 P 10800 1000
 AR Path="/5FE53EBB/603D897A" Ref="R?"  Part="1" 
@@ -161,7 +161,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 1550 10800 1650
 $Comp
-L power:GND #PWR0147
+L camera-rescue:GND-power #PWR0147
 U 1 1 603DB2AE
 P 10800 2150
 F 0 "#PWR0147" H 10800 1900 50  0001 C CNN
@@ -174,7 +174,7 @@ $EndComp
 Wire Wire Line
 	10800 1950 10800 2150
 $Comp
-L power:+3V3 #PWR0148
+L camera-rescue:+3V3-power #PWR0148
 U 1 1 603DCE9C
 P 10800 750
 F 0 "#PWR0148" H 10800 600 50  0001 C CNN
@@ -194,7 +194,7 @@ Connection ~ 10800 1200
 Wire Wire Line
 	10800 1200 10800 1250
 $Comp
-L FPGA_Xilinx_Spartan6:XC6SLX16-FTG256 U1
+L camera-rescue:XC6SLX16-FTG256-FPGA_Xilinx_Spartan6 U1
 U 1 1 60405012
 P 3350 3900
 F 0 "U1" H 3350 725 50  0000 C CNN
@@ -205,7 +205,7 @@ F 3 "" H 3350 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L camera-rescue:R-Device R?
 U 1 1 604AAE53
 P 1200 1600
 AR Path="/5FE53EBB/604AAE53" Ref="R?"  Part="1" 
@@ -219,7 +219,7 @@ F 4 "0.00217" H 1200 1600 50  0001 C CNN "Cost"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0159
+L camera-rescue:GND-power #PWR0159
 U 1 1 604B0CB1
 P 950 1600
 F 0 "#PWR0159" H 950 1350 50  0001 C CNN
@@ -232,7 +232,7 @@ $EndComp
 Wire Wire Line
 	1050 1600 950  1600
 $Comp
-L Oscillator:SG-5032CAN X?
+L camera-rescue:SG-5032CAN-Oscillator X?
 U 1 1 60606296
 P 7150 3000
 AR Path="/60207289/60606296" Ref="X?"  Part="1" 
@@ -245,7 +245,7 @@ F 3 "https://support.epson.biz/td/api/doc_check.php?dl=brief_SG5032CAN&lang=en" 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0160
+L camera-rescue:GND-power #PWR0160
 U 1 1 6060A20D
 P 7150 3500
 F 0 "#PWR0160" H 7150 3250 50  0001 C CNN
@@ -266,7 +266,7 @@ Wire Wire Line
 Text Label 800  3500 0    50   ~ 0
 SYS_CLK
 $Comp
-L Device:R R?
+L camera-rescue:R-Device R?
 U 1 1 60618459
 P 6800 2850
 AR Path="/5FE53EBB/60618459" Ref="R?"  Part="1" 
@@ -280,7 +280,7 @@ F 4 "0.00217" H 6800 2850 50  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0161
+L camera-rescue:+3V3-power #PWR0161
 U 1 1 6061E4B8
 P 7150 2450
 F 0 "#PWR0161" H 7150 2300 50  0001 C CNN
@@ -315,7 +315,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 800  1950 650 
 $Comp
-L power:+3V3 #PWR0162
+L camera-rescue:+3V3-power #PWR0162
 U 1 1 6066CBF3
 P 1950 650
 F 0 "#PWR0162" H 1950 500 50  0001 C CNN
@@ -326,7 +326,7 @@ F 3 "" H 1950 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0163
+L camera-rescue:+3V3-power #PWR0163
 U 1 1 606706A1
 P 4650 700
 F 0 "#PWR0163" H 4650 550 50  0001 C CNN
