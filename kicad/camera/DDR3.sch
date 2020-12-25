@@ -731,4 +731,18 @@ F 4 "0.00217" H 6550 5350 50  0001 C CNN "Cost"
 	1    6550 5350
 	0    1    1    0   
 $EndComp
+$Comp
+L camera-rescue:R-Device R?
+U 1 1 5FE9180F
+P 4050 5050
+AR Path="/5FE53EBB/5FE9180F" Ref="R?"  Part="1" 
+AR Path="/60207289/5FE9180F" Ref="R?"  Part="1" 
+F 0 "R?" V 3843 5050 50  0000 C CNN
+F 1 "4.7k" V 3934 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 5050 50  0001 C CNN
+F 3 "~" H 4050 5050 50  0001 C CNN
+F 4 "0.00217" H 4050 5050 50  0001 C CNN "Cost"
+	1    4050 5050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
